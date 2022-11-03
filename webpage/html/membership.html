@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<!-- 외부 스타일 -->
+<link href="../css/basic.css" rel="stylesheet" />
+
+<!-- 스타일 시트 -->
+<style>
+    table{
+    
+        border-left:1px solid #f8f6f6;        
+
+        border-spacing: 0px;
+        margin: 100px auto; /* 위아래 10px, 가운데정렬 */
+    }
+    .table_title{
+        border-collapse:none;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        border-top: 1px solid black;
+    }
+    tr{
+        height: 35px;
+    }
+    th{
+        width: 130px;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    td{
+        width: 500px;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        padding-left: 5px;
+    }
+    .bottom{
+        width: 120px;
+        margin: 10px auto;
+        position: relative;
+    }
+
+
+</style>
+<body>
+    <table >
+        <tr>
+            <td colspan="2" class="table_title">회원가입</td>
+        </tr>
+        <tr>
+            <th>아 이 디</th>
+            <td>
+                <input type="text" name="user_id" id="user_id" class="input_text" required>
+            </td>
+        </tr>
+        <tr>
+            <th>비밀번호</th>
+            <td>
+                </label><input type="password" name="user_pw" id="user_pw" class="input_text" required>
+            </td>
+        </tr>
+        <tr>
+            <th>비밀번호확인</th>
+            <td>
+                </label><input type="password" name="user_pw" id="user_pw2" class="input_text" required>
+            </td>
+        </tr>
+        <tr>
+            <th>이 메 일</th>
+            <td>
+                <input type="email" name="user_email" id="user_email">
+            </td>
+        </tr>
+    </table>
+
+    <div class="bottom">
+        <input type="submit" name="submit" id="submit" value="회원가입">&nbsp;&nbsp;
+    </div>
+</body>
+</html>

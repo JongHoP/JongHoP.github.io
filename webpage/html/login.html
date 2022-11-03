@@ -1,0 +1,46 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+</head>
+<!-- 외부 스타일 -->
+<link href="../css/basic.css" rel="stylesheet" />
+
+<style>
+.login_main{
+    margin-top: 10%;
+    text-align: center;
+}
+.login_main > ul {
+    margin-left: 40%;
+    text-align: center;
+    display: table;
+
+}
+.bottom{
+        width: 120px;
+        margin: 10px auto;
+        display:inline-block;
+        position: relative;
+    }
+
+
+</style>
+
+<body>
+<div class ="login_main">
+    <h2> 로그인 </h2>
+<ul>
+    <li>ID :  <INPUT TYPE ="TEXT" NAME="ID" SIZE ="20" required placeholder="아이디 입력"></li>
+    <li>PW :  <INPUT TYPE ="TEXT" NAME="password" SIZE ="20" required placeholder="비밀번호 입력"></li>
+    
+</ul>
+<div class="bottom">
+    <input type="submit" name="submit" id="submit" value="로그인">&nbsp;&nbsp;
+</div>
+<a href="membership.html"><input type="submit" name="membership" id="membership" value="회원가입"></a>
+</div>
+
+
+</body>
+</html>
